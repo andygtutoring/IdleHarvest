@@ -1,0 +1,63 @@
+<!-- IdleHarvest.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Harvest</title>
+    <link rel="stylesheet" href="IdleHarvest.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>Idle Harvest</h1>
+        <p>Coins: <span id="coins">100</span></p>
+      </div>
+      <div class="game-content">
+        <div class="land-plots">
+          <h2>Land Plots</h2>
+          <button id="buy-land">Buy Land Plot (10 Coins)</button>
+          <p>Owned Land Plots: <span id="land-count">0</span></p>
+        </div>
+        <div class="seed-shop">
+          <h2>Seed Shop</h2>
+          <button id="buy-wheat-seed">Buy Wheat Seed (5 Coins)</button>
+          <button id="buy-carrot-seed">Buy Carrot Seed (10 Coins)</button>
+          <button id="buy-potato-seed">Buy Potato Seed (20 Coins)</button>
+          <p>Owned Seeds: 
+            <span id="wheat-seed-count">0</span> Wheat, 
+            <span id="carrot-seed-count">0</span> Carrot, 
+            <span id="potato-seed-count">0</span> Potato
+          </p>
+        </div>
+        <div class="land-management">
+          <h2>Land Management</h2>
+          <select id="land-select">
+            <!-- populated dynamically -->
+          </select>
+          <select id="seed-select">
+            <option value="none">Select Seed</option>
+            <option value="wheat">Wheat Seed</option>
+            <option value="carrot">Carrot Seed</option>
+            <option value="potato">Potato Seed</option>
+          </select>
+          <button id="plant-seed">Plant Seed</button>
+          <button id="harvest-plant">Harvest Plant</button>
+        </div>
+        <div class="shop">
+          <h2>Shop</h2>
+          <button id="sell-wheat">Sell Wheat (10 Coins)</button>
+          <button id="sell-carrot">Sell Carrot (20 Coins)</button>
+          <button id="sell-potato">Sell Potato (50 Coins)</button>
+          <p>Harvested Plants: 
+            <span id="wheat-harvest-count">0</span> Wheat, 
+            <span id="carrot-harvest-count">0</span> Carrot, 
+            <span id="potato-harvest-count">0</span> Potato
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="IdleHarvest.js"></script>
+  </body>
+</html>
